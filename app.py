@@ -7,15 +7,18 @@
 import streamlit as st
 import pandas as pd
 from recommender import get_recommendations
+import os
 
 
 # In[2]:
 
 
 #Load Data
-users = pd.read_csv("data/users.csv")
-offers = pd.read_csv("data/offers.csv")
-context = pd.read_csv("data/context.csv")
+DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+
+users = pd.read_csv(os.path.join(DATA_DIR, "users.csv"))
+offers = pd.read_csv(os.path.join(DATA_DIR, "offers.csv"))
+context = pd.read_csv(os.path.join(DATA_DIR, "context.csv"))
 
 st.set_page_config(page_title = "SMART OFFER AGENT", layout = "centered")
 st.title("SMART OFFER AGENT - PERSONALIZED RECOMMENDER")

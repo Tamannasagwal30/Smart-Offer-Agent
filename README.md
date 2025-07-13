@@ -15,7 +15,9 @@ Click here to launch the app - (https://tamanna-smart-offer.streamlit.app)
 This application mimics the personalization logic used in platforms like **maya.ai**, combining:
 
 **Taste profiling** via TF-IDF and cosine similarity
+
 **Real-time context** (weather, time, occasion)
+
 **Hybrid scoring logic** to deliver top 3 most relevant offers
 
 ---

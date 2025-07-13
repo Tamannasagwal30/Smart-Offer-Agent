@@ -51,16 +51,8 @@ if st.button("Get Smart Recommendations"):
     top_offers = get_recommendations(user_id, weather, time_of_day, occasion, users_df= users, offers_df = offers)
     st.subheader("Top Personalized offers for you")
     for i, row in top_offers.iterrows():
-        st.markdown(f"""
-        ---  
-        **{row['offer_title']}**  
-        {row['offer_desc']}  
-        **Final Score:** `{row['final_score']:.2f}`  
-        _Why this offer?_  
-        - Taste Match Score: `{row['taste_score']:.2f}`  
-        - Context Match Score: `{row['context_score']:.2f}`
-        """)
-
+        st.markdown(f"**{row['offer_title']}** — {row['offer_desc']} (Score: {row['final_score']:.2f})")
+       
 
 # In[ ]:
 

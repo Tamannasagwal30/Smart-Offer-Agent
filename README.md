@@ -41,7 +41,7 @@ Each recommendation comes with a **breakdown of taste and context match scores**
 
 1. **User Tags** → Match with offer tags using TF-IDF
 2. **Context Tags** → Matched against weather, time of day, and occasion
-3. **Final Score** = Taste score + Context score (adjustable)
+3. **Final Score** = Taste score + Context score
 
 ---
 

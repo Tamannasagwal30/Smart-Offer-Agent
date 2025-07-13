@@ -9,6 +9,12 @@ import pandas as pd
 from recommender import get_recommendations
 import os
 
+# Debugging: Show current folder and file check
+st.write("🔍 Current folder:", os.getcwd())
+st.write("✅ users.csv exists:", os.path.exists("data/users.csv"))
+st.write("✅ offers.csv exists:", os.path.exists("data/offers.csv"))
+st.write("✅ context.csv exists:", os.path.exists("data/context.csv"))
+
 
 # In[2]:
 

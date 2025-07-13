@@ -9,22 +9,15 @@ import pandas as pd
 from recommender import get_recommendations
 import os
 
-# Debugging: Show current folder and file check
-st.write("🔍 Current folder:", os.getcwd())
-st.write("✅ users.csv exists:", os.path.exists("data/users.csv"))
-st.write("✅ offers.csv exists:", os.path.exists("data/offers.csv"))
-st.write("✅ context.csv exists:", os.path.exists("data/context.csv"))
-
 
 # In[2]:
 
 
 #Load Data
-DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+users = pd.read_csv("users.csv")
+offers = pd.read_csv("offers.csv")
+context = pd.read_csv("context.csv")
 
-users = pd.read_csv(os.path.join(DATA_DIR, "users.csv"))
-offers = pd.read_csv(os.path.join(DATA_DIR, "offers.csv"))
-context = pd.read_csv(os.path.join(DATA_DIR, "context.csv"))
 
 st.set_page_config(page_title = "SMART OFFER AGENT", layout = "centered")
 st.title("SMART OFFER AGENT - PERSONALIZED RECOMMENDER")

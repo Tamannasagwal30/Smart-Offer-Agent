@@ -6,7 +6,7 @@ A mini proof-of-concept inspired by Crayon Data’s **maya.ai**, showcasing how 
 
 # Live Demo
 
-Click here to launch the app - (https://tamanna-smart-offer.streamlit.app)  
+Click here to launch the app - https://tamanna-smart-offer-agent.streamlit.app  
 
 ---
 
